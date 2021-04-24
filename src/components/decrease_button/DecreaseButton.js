@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Decrement } from "../../actions/actions";
+import "./styles.scss";
 
 const DecrementButton = () => {
   const dispatch = useDispatch();
@@ -16,7 +17,9 @@ const DecrementButton = () => {
 
   return (
     <div>
-      <button onClick={DecrementCount}>Decrement</button>
+      <button className="decrement_btn" onClick={DecrementCount}>
+        Decrease
+      </button>
     </div>
   );
 };

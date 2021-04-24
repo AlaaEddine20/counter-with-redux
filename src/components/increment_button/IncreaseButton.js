@@ -1,6 +1,7 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { Increment } from "../../actions/actions";
+import "./styles.scss";
 
 const IncrementButton = () => {
   const dispatch = useDispatch();
@@ -11,7 +12,9 @@ const IncrementButton = () => {
 
   return (
     <>
-      <button onClick={IncrementCount}>Increment</button>
+      <button className="increment_btn" onClick={IncrementCount}>
+        Increase
+      </button>
     </>
   );
 };
