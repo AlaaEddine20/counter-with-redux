@@ -1,17 +1,28 @@
 .counter_container {
-  height: 250px;
-  width: 300px;
+  height: 270px;
+  width: 380px;
+  border: 2px solid black;
+  padding: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
 }
 
-button {
-  padding: 0.3rem;
-  margin: 10px;
-}
-
 .buttons {
   display: flex;
+}
+
+button {
+  padding: 0.4rem 0.8rem;
+  margin: 20px;
+  font-size: 16px;
+}
+
+.black_color {
+  color: black;
+}
+
+.red_color {
+  color: red;
 }
