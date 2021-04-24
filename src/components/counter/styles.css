@@ -1,0 +1,17 @@
+.counter_container {
+  height: 250px;
+  width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+button {
+  padding: 0.3rem;
+  margin: 10px;
+}
+
+.buttons {
+  display: flex;
+}
