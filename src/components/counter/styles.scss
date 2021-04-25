@@ -1,8 +1,9 @@
 .counter_container {
   height: 270px;
-  width: 400px;
+  width: 450px;
   padding: 2rem;
   display: flex;
+  border: 1px solid rgb(85, 80, 80);
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
@@ -18,5 +19,15 @@
 
   .red_color {
     color: red;
+  }
+
+  .reset_btn {
+    padding: 0.5rem 0.8rem;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #94936a;
+    color: #fff;
+    cursor: pointer;
   }
 }

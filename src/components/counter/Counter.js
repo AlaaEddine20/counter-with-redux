@@ -1,11 +1,17 @@
 import React from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import DecreaseButton from "../decrease_button/DecreaseButton";
 import IncreaseButton from "../increment_button/IncreaseButton";
+import { Reset } from "./../../actions/actions";
 import "./styles.scss";
 
 const Counter = ({ title }) => {
   const count = useSelector((state) => state.count);
+  const dispatch = useDispatch();
+
+  const handleReset = () => {
+    dispatch(Reset());
+  };
 
   return (
     <div className="counter_container">
@@ -24,6 +30,9 @@ const Counter = ({ title }) => {
       <div className="buttons">
         <DecreaseButton />
         <IncreaseButton />
+        <button className="reset_btn" onClick={handleReset}>
+          Reset Count
+        </button>
       </div>
     </div>
   );
