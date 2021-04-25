@@ -4,21 +4,14 @@
   padding: 2rem;
   display: flex;
   border: 1px solid rgb(85, 80, 80);
+  border-radius: 10px;
   align-items: center;
   justify-content: space-around;
   flex-direction: column;
-  color: #fff;
+  color: #000;
 
   .buttons {
     display: flex;
-  }
-
-  .black_color {
-    color: #000;
-  }
-
-  .red_color {
-    color: red;
   }
 
   .reset_btn {

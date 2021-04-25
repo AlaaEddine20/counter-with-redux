@@ -19,9 +19,9 @@ const Counter = ({ title }) => {
       <h2
         style={
           count === 0
-            ? { color: "white" }
-            : count % 2 === 0
             ? { color: "black" }
+            : count % 2 === 0
+            ? { color: "green" }
             : { color: "red" }
         }
       >
